@@ -11,7 +11,7 @@ test_encode = face_recognition.face_encodings(img)[0]
 
 
 f = 128
-u = AnnoyIndex(f, "euclidean")
+u = AnnoyIndex(f, "angular")
 u.load("test.ann")
 
 with open("refer.pkl", "rb") as f:

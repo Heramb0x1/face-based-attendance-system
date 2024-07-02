@@ -8,7 +8,7 @@ print(os.listdir("training"))
 transet = os.listdir("training")
 encodings = {}
 f = 128
-t = AnnoyIndex(f, "euclidean")
+t = AnnoyIndex(f, "angular")
 
 
 for img in transet:
